@@ -29,13 +29,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col md:flex-row h-screen bg-white overflow-hidden font-sans">
+        <div className="flex flex-col md:flex-row h-dvh bg-white overflow-hidden font-sans">
           {/* Sidebar - Hidden on mobile, visible on medium+ screens */}
           <div className="hidden md:block h-full shrink-0">
             <Sidebar />
           </div>
 
-          <div className="flex-1 h-full overflow-hidden w-full relative">
+          <div className="flex-1 overflow-hidden w-full relative pb-16 md:pb-0">
             {children}
           </div>
 
