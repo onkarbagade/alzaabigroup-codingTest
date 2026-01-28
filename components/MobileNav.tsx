@@ -24,7 +24,7 @@ const MobileNavLink = ({ href, icon, label }: { href: string; icon: React.ReactN
 
 export default function MobileNav() {
     return (
-        <div className="md:hidden h-16 bg-[#0F1035] border-t border-white/5 flex items-center justify-around px-2 shrink-0 z-[100]">
+        <div className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-[#0F1035] border-t border-white/5 flex items-center justify-around px-2 shrink-0 z-[100]">
             <MobileNavLink href="/task" icon={<LayoutGrid size={24} />} label="Task" />
             <MobileNavLink href="/hrms" icon={<Users size={24} />} label="HRMS" />
             <MobileNavLink href="/" icon={<MessageCircle size={24} />} label="Connect" />
